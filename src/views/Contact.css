@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+
+}
+.contact-column{
+    font-size: 15px;
+    padding-left: 4rem;
+    color: white;
+}
+.contactus-column{
+    background: rgb(97, 95, 95);
+}
+.contact-head{
+    padding-left: 15rem;
+    font-size: 30px;
+}

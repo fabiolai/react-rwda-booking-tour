@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+
+}
+.footer-content{
+     padding: 4.4rem;
+    display: grid;
+    background: rgb(44, 43, 43);
+    grid-template-columns: repeat(5, 1fr);
+
+}
+p span{
+    display: block;
+}
+.footer-title{
+    font-size: 2.4rem;
+    color: white;
+}
+.icons{
+    display: flex;
+    gap: 2rem;
+    padding: 2rem 0;
+    color: #ddd;
+    font-size: 2rem;
+}
+.copyright, .contctus-column{
+    color: #ddd;
+    font-size:1.8rem ;
+}
+.home-container a:hover,
+.home-container a:active{
+    color: white;
+}
+.acount-column{
+    color:#ddd;
+}
+
+
+

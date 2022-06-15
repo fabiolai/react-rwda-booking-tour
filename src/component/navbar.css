@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    text-align: center;
+    height: 9rem;
+    background: rgb(10, 10, 10);
+    
+
+    
+}
+.logo-img{
+    width: 100px;
+    object-fit: cover;
+    border-radius: 60%;
+    height: 8rem;
+}
+.nav-links{
+    display: flex;
+    list-style-type: none;
+    gap: 1.4rem;
+   
+    
+
+}
+.nav-link:link,
+.nav-link:visited{
+font-size:1.8rem;
+ text-align: none;
+color: rgb(214, 194, 10);
+font-weight: 500; 
+
+}
+.nav-link:hover,
+.nav-link:active{
+    color: rgb(250, 249, 241);
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-link{
+    text-decoration: none;
+    border-radius: 2px solid gray;
+}
+.link-green:link,
+.link-green:visited{
+    color: rgb(214, 194, 10);
+
+}
+.link-green:hover,
+.link-green:active{
+    color:rgb(255, 253, 253);
+
+}
+
+
+.btn-link:link,
+.btn-link:visited{
+    background: rgb(99, 103, 104);
+    padding: 1.2rem 1.2rem;
+    border-radius: 2px solid gray;
+
+}
+.btn-link:hover,
+.btn-link:active{
+    background:rgb(252, 252, 248)
+    
+
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+.home-container{
+    background-image: url("../assets/image/background2.jpg");
+    background-size: cover;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+.heading-title{
+    color: white;
+    text-transform: uppercase;
+    font-size: 4.4rem;
+    letter-spacing: 1px;
+    text-shadow: 3px 4px 5px black;
+    text-align: center;
+    padding-top: 1.2rem;
+}
+.align{
+    background: blue;
+    height: 1rem;
+    width: 7rem;
+    margin-top: 0;
+    border: none;
+    margin-left: 70rem;
+    margin-top: 0;
+}
+.carousel-img img{
+    height: 300px;
+    margin-bottom: 1rem;
+}
+.carousel-img{
+    width: 40%;
+    margin: 0 auto;
+    
+}
+.top-tour{
+    color: rgb(156, 28, 28);
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 900;
+    margin-top: 0.8rem;
+    margin-bottom: 0.3rem;
+
+}
+
+
+
