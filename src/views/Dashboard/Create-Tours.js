@@ -1,0 +1,8 @@
+import React from "react";
+
+const Createtours = () => {
+    return(
+<h1>hhh</h1>
+    );
+};
+export default Createtours;

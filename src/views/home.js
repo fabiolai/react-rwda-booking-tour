@@ -1,9 +1,9 @@
 import React from "react";
 import Nav from "../component/navbar";
-import gorilla from "../assets/image/gorilla1.jpg";
-import nyungwe from "../assets/image/gorilla2.jpg"; 
-import forest from "../assets/image/image4.jpg";
-import park from "../assets/image/nyungwe3.jpg";
+import gorilla from "../assets/image/akagera p1.jpg";
+import nyungwe from "../assets/image/akagera p2.jpg"; 
+import forest from "../assets/image/gorilla2.jpg";
+import park from "../assets/image/akagera p3.jpg";
 
 import './home.css'
 import 'antd/dist/antd.css';
@@ -47,7 +47,7 @@ const Home = () => {
         </div>
         
        
-    <h2 className="top-tour"> Top-tour</h2>
+    <h2 className="top-tour"> Top-Tour</h2>
     <hr className="align"></hr>
     
     </div>

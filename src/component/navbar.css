@@ -53,25 +53,31 @@ font-weight: 500;
 .link-green:link,
 .link-green:visited{
     color: rgb(214, 194, 10);
-
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    background: rgb(20, 65, 77);
+    padding: 1.2rem 1.2rem;
 }
 .link-green:hover,
 .link-green:active{
     color:rgb(255, 253, 253);
+   
 
 }
 
 
 .btn-link:link,
 .btn-link:visited{
-    background: rgb(99, 103, 104);
+    background: rgb(20, 65, 77);
     padding: 1.2rem 1.2rem;
-    border-radius: 2px solid gray;
+    border-radius: 1.5rem;
+    font-size: 1.8rem;
+    
 
 }
 .btn-link:hover,
 .btn-link:active{
-    background:rgb(252, 252, 248)
+    color:rgb(252, 252, 248)
     
 
 }

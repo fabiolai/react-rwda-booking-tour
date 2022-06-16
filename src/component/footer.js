@@ -31,6 +31,7 @@ const Footer=()=>{
         <h3 className="footer-title">Account</h3>
         <p><a href="#">Create Account </a></p>
         <p><a href="#">Sign-in </a></p>
+        <p><a href="#">Sign-up </a></p>
        </div>
 
         <div className="acount-column">

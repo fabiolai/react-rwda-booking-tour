@@ -30,14 +30,16 @@ p span{
 }
 .copyright, .contctus-column{
     color: #ddd;
-    font-size:1.8rem ;
+    font-size: 1.5rem ;
 }
 .home-container a:hover,
 .home-container a:active{
     color: white;
 }
-.acount-column{
-    color:#ddd;
+.acount-column a{
+    color:rgb(253, 244, 244);
+    font-size: 1.5rem;
+
 }
 
 

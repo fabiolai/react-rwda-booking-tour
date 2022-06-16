@@ -13,7 +13,7 @@ const Tours = () => {
       <div style={{ width: "100%", height: "auto", padding: "10px" }}>
         <Card style={{ width: "100%" }}>
           {allTours.map((tour) => (
-            <Card.Grid style={{ width: "32%", minHeight: "30rem" }}>
+            <Card.Grid style={{ width: "32%", minHeight: "50rem" }}>
               <Space direction="vertical">
                 <Image preview={true} src={tour.photo} />
                 <Title level={4} style={{ color: "#1976D1" }}>

@@ -1,5 +1,5 @@
 import React from "react";
-import {  Form, Button,Input } from 'antd';
+import {  Form, Button,Input, Card } from 'antd';
 import {FacebookOutlined, TwitterOutlined, InstagramOutlined, WhatsAppOutlined, PhoneOutlined  } from "@ant-design/icons";
 import './Contact.css';
 
@@ -8,11 +8,12 @@ const Contact = () => {
 return(
     <>
     <div className="contactus-column">
-    <div className="contact-head">
-    <h2>GET IN TOUCH</h2>
-    <h3>I’M ALWAYS OPEN TO DISCUSSING PRODUCT DESIGN WORK OR PARTNERSHIPS.</h3>
+    <div className="contact-head" style={{ color:"gray"}}>
+    <h4>We'd love to hear from you</h4>
+    <h6>Send us a message and we'll respond as soon as possible</h6>
     </div>
     <div className="contact-column">
+      <Card style={{ width: "25%",background:"pink" }}>
             <h3 className="contanct-title">Phone</h3>
             <p><a href="tel:+250786131474" /><PhoneOutlined/>tel:+250-786131474</p>
             <h3 className="contanct-title">whatsApp</h3>
@@ -25,7 +26,9 @@ return(
                 <TwitterOutlined />
                 <InstagramOutlined />
                 <WhatsAppOutlined/>
+               
                 </div>
+                </Card>
         </div>
     <form style={{width:"50%", padding:""}}>
      <Form.Item 
@@ -33,7 +36,7 @@ return(
      name="email"
      rules={[{ required: true, message: 'Please input your username!' }]}
    >
-     <Input placeholder="your name" />
+     <Input placeholder="Name" />
     
    </Form.Item>
    <Form.Item 
@@ -41,10 +44,10 @@ return(
      name="username"
      rules={[{ required: true, message: 'Please input your username!' }]}
    >
-     <Input placeholder="your email" />
+     <Input placeholder="Email" />
    </Form.Item>
    <Form.Item >
-        <TextArea rows={4} placeholder="your message"/>
+        <TextArea rows={4} placeholder=" Send Message"/>
       </Form.Item>
       <Button type="primary" htmlType="submit">
             Send Message
