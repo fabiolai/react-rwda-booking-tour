@@ -5,8 +5,12 @@ import {
     UserOutlined,
     VideoCameraOutlined,
   } from '@ant-design/icons';
-  import { Layout, Menu } from 'antd';
+  import { Layout, Menu, Typography } from 'antd';
   import React, {  useState } from 'react';
+  import { Link } from 'react-router-dom';
+  
+
+  
   const { Header, Sider, Content } = Layout;
   
   const Dashboard = ({ children }) => {
@@ -15,7 +19,7 @@ import {
       <Layout>
         <Sider trigger={null} collapsible collapsed={collapsed}>
           <div className="logo" />
-          <Menu
+          {/* <Menu
             theme="dark"
             mode="inline"
             defaultSelectedKeys={['1']}
@@ -23,6 +27,7 @@ import {
               {
                 key: '1',
                 icon: <UserOutlined />,
+               
                 label: 'All-tour',
               },
               {
@@ -36,7 +41,9 @@ import {
                 label: 'nav 3',
               },
             ]}
-          />
+          /> */}
+          <Link to="/admin/All-tour">AllTours</Link><br></br>
+          <Link to="/admin/All-tour">Createtours</Link>
         </Sider>
         <Layout className="site-layout">
           <Header

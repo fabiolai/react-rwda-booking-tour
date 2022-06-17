@@ -1,6 +1,7 @@
 import React from "react";
 import {Card, Image, Space, Typography } from "antd";
 import park from "../assets/image/akagera p3.jpg";
+import pic from "../assets/image/kivu1.webp";
 const { Title, Text } = Typography;
 const About = () => {
   return (
@@ -9,8 +10,8 @@ const About = () => {
         <Space direction="horizontal">
           <Image src={park}style={{ height: "30rem", width: "70rem", alignItems: "center" }}/>
           <div>
-            <Title style={{ color: "blue", textAlign: "center" }}>
-              KNOW MORE ABOUT Us
+            <Title style={{ color: "blue", textAlign: "center", fontSize:"15px" }}>
+              KNOW MORE ABOUT US
             </Title>
             <Text style={{ textAlign: "center" }}>
               <span style={{ color: "green", fontSize: "30px" }}>
@@ -30,7 +31,28 @@ const About = () => {
           </div>
         </Space>
       </Card>
-      <Title><h2 style={{textAlign:"center"}}>Rwanda Booking Tours</h2></Title>
+      <Card style={{height: "auto",width: "100%" ,justifyContent: "space-between"}}>
+        <Space direction="horizontal">
+          <Image src={pic}style={{ height: "30rem", width: "70rem", alignItems: "center" }}/>
+          <div>
+           
+            <Text style={{ textAlign: "center", fontSize:"15px" }}>
+              <span style={{ color: "green", fontSize: "30px" }}>
+              Rwanda Booking Tours
+              </span>
+              <br />Plan Your trip to Rwanda today for a chance to explore the Land of
+          Thousand Hills dubbed as one of the most attractive safari
+          destinations in Africa. Book a Tour holiday to Rwanda to experience a
+          number of adventurous activities including the most sought after
+          gorilla trekking tours, chimpanzee tracking, golden monkey tracking,
+          wildlife viewing, Kigali the cleanest African City, Visit and tour the
+          genocide memorial sites, have a cultural experience with the local
+          people and enjoy a taste of African local dishes.
+            </Text>
+          </div>
+        </Space>
+      </Card>
+      {/* <Title><h2 style={{textAlign:"center"}}>Rwanda Booking Tours</h2></Title>
       <Card style={{ background: "transparent", ShadowColor: "black",width:"40%",height:"auto", 
     textAlign: "center", backgroundColor:"red",opacity:"0.5",
     justifyContent: "center", marginLeft:"45rem",
@@ -47,7 +69,7 @@ const About = () => {
           genocide memorial sites, have a cultural experience with the local
           people and enjoy a taste of African local dishes.
         </Text>
-      </Card>
+      </Card> */}
 
       
     </>

@@ -13,7 +13,7 @@ return(
     <h6>Send us a message and we'll respond as soon as possible</h6>
     </div>
     <div className="contact-column">
-      <Card style={{ width: "25%",background:"pink" }}>
+      <Card style={{ width: "50%",background:"transparent", float:"right", padding:"2rem", margin:"2rem",color:"blue" }}>
             <h3 className="contanct-title">Phone</h3>
             <p><a href="tel:+250786131474" /><PhoneOutlined/>tel:+250-786131474</p>
             <h3 className="contanct-title">whatsApp</h3>
@@ -21,7 +21,7 @@ return(
             <h3 className="contanct-title"> Instagram</h3>
             <p><a href="mail to:fabykalifa" /><InstagramOutlined />faby-i</p>
             <h3 className="contanct-title">Social-media</h3>
-            <div className="icons">
+            <div className="icons" style={{color:"black"}}>
                 <FacebookOutlined />
                 <TwitterOutlined />
                 <InstagramOutlined />
@@ -30,7 +30,8 @@ return(
                 </div>
                 </Card>
         </div>
-    <form style={{width:"50%", padding:""}}>
+        
+    <form style={{width:"50%", height:"30%", padding:"1rem", margin:"3rem" }}>
      <Form.Item 
     
      name="email"
@@ -47,13 +48,13 @@ return(
      <Input placeholder="Email" />
    </Form.Item>
    <Form.Item >
-        <TextArea rows={4} placeholder=" Send Message"/>
+        <TextArea rows={4} placeholder=" Your Message"/>
       </Form.Item>
-      <Button type="primary" htmlType="submit">
+      <Button type="primary" htmlType="submit" style={{width:"94.5%"}}>
             Send Message
           </Button>
    </form>
-   
+  
    </div>
 
 

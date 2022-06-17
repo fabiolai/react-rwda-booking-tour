@@ -12,17 +12,18 @@ html{
     justify-content: space-between;
     padding: 1rem 1rem;
     text-align: center;
-    height: 9rem;
-    background: rgb(10, 10, 10);
+    height: 7rem;
+    background: rgba(0, 10, 31, 0.938);
     
 
     
 }
 .logo-img{
-    width: 100px;
+    margin-left: 2rem;
+    width: 90px;
     object-fit: cover;
     border-radius: 60%;
-    height: 8rem;
+    height: 4rem;
 }
 .nav-links{
     display: flex;
@@ -34,15 +35,15 @@ html{
 }
 .nav-link:link,
 .nav-link:visited{
-font-size:1.8rem;
+font: size 1.5rem;
  text-align: none;
-color: rgb(214, 194, 10);
+color: rgb(253, 247, 247);
 font-weight: 500; 
 
 }
 .nav-link:hover,
 .nav-link:active{
-    color: rgb(250, 249, 241);
+    color: rgb(202, 101, 5);
     cursor: pointer;
     text-decoration: none;
 }
@@ -52,10 +53,10 @@ font-weight: 500;
 }
 .link-green:link,
 .link-green:visited{
-    color: rgb(214, 194, 10);
+    color: rgb(243, 242, 235);
     border-radius: 1.5rem;
     font-size: 1.8rem;
-    background: rgb(20, 65, 77);
+    /* background: rgb(20, 65, 77); */
     padding: 1.2rem 1.2rem;
 }
 .link-green:hover,
@@ -68,10 +69,10 @@ font-weight: 500;
 
 .btn-link:link,
 .btn-link:visited{
-    background: rgb(20, 65, 77);
-    padding: 1.2rem 1.2rem;
-    border-radius: 1.5rem;
-    font-size: 1.8rem;
+    
+    padding: 0.4rem 1rem;
+  
+    font-size: 1.3rem;
     
 
 }
