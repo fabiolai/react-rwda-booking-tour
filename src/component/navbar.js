@@ -32,7 +32,7 @@ const Nav=()=>{
                 <li><a href="Contact-us " className="nav-link">CONTACT-US </a></li>
                 {/* <li><a href=" " className="nav-link link-green">SIGN-UP </a></li> */}
                 <li><a href=" /Tours" className="nav-link btn-link">TOURS </a></li>
-                <li><a href="/login" className="nav-link btn-link">login</a></li>
+                <li><a href="/Login" className="nav-link btn-link">login</a></li>
 
 
 

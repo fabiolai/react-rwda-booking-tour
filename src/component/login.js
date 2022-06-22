@@ -2,7 +2,7 @@ import React from "react";
 import {  Form, Button,Input, Card } from 'antd';
 import {FacebookOutlined, TwitterOutlined, InstagramOutlined, WhatsAppOutlined, PhoneOutlined  } from "@ant-design/icons";
 
-const login=()=>{
+const Login = () => {
     return(
         <Card style={{ width: "30%"}}>
         <form style={{width:"50%"}}>
@@ -35,4 +35,4 @@ const login=()=>{
 
     );
 }
-export default login;
+export default Login;

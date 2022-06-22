@@ -7,13 +7,14 @@ const columns = [
     dataIndex: 'title',
 },
 {
+  title:'Description',
    dataIndex:'description'
 }
 ]
  
 
 const AllTours = () => 
- 
+
    
     
 
@@ -22,7 +23,6 @@ const AllTours = () =>
         dataSource={allTours}
       />
     
-
 
 
 export default AllTours;
