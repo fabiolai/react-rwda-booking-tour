@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'antd/dist/antd.css';
 import './DashLayout.css';
-import ManagerUsers from './Admin/ManagerUsers';
+import ManagerUsers from './Admin/Userstable';
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
@@ -27,17 +27,17 @@ const DashLayout = ({ children }) => {
             {
               key: '1',
               icon: <UserOutlined />,
-              label: 'All Tours',
+              label: 'Dashboard',
             },
             {
               key: '2',
               icon: <VideoCameraOutlined />,
-              label: 'Create Tables',
+              label: 'Manager User',
             },
             {
               key: '3',
               icon: <UploadOutlined />,
-              label: 'nav 3',
+              label: 'Manager Trips',
             },
           ]}
         />

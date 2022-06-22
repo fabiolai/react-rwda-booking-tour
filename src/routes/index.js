@@ -6,13 +6,15 @@ import Login from "../component/login";
 import HomeLayout from "../component/homelayout";
 import Tours from "../views/Tours";
 import Contact from "../views/Contact-us";
-import Admin from "./admin";
-import ManagerUsers from "../component/Admin/ManagerUsers";
+
+import ManagerUsers from "../component/Admin/Userstable";
+import ManagingTrips from "../views/admin/ManagingTrips";
 
 const Index = () => {
   return (
     <>
       <HomeLayout>
+        
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/about" element={<About />}></Route>
@@ -20,9 +22,10 @@ const Index = () => {
           <Route exact path="/Contact-us" element={<Contact />}></Route>
           <Route exact path="/login" element={<Login />}></Route>
 
-          <Route exact path="/All-tour" element={<Admin />}></Route>
-          <Route exact path="/Create-Tours" element={<Admin />}></Route>
+         
           <Route exact path="/users" element={<ManagerUsers />}></Route>
+          <Route exact path="/trips" element={<ManagingTrips />}></Route>
+
         </Routes>
       </HomeLayout>
     </>
