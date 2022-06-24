@@ -1,19 +1,21 @@
-import React, { useState } from 'react';
-import 'antd/dist/antd.css';
-import './DashLayout.css';
-import ManagerUsers from './Admin/Userstable';
+import React, { useState } from "react";
+import "antd/dist/antd.css";
+import "./DashLayout.css";
+
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   UploadOutlined,
   UserOutlined,
   VideoCameraOutlined,
-} from '@ant-design/icons';
-import { Layout, Menu } from 'antd';
+} from "@ant-design/icons";
+import { Layout, Menu  } from "antd";
+import { useNavigate } from "react-router-dom";
 
 const { Header, Sider, Content } = Layout;
 
 const DashLayout = ({ children }) => {
+  const navigate= useNavigate();
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Layout>
@@ -22,22 +24,22 @@ const DashLayout = ({ children }) => {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={['1']}
+          defaultSelectedKeys={["1"]}
           items={[
             {
-              key: '1',
-              icon: <UserOutlined />,
-              label: 'Dashboard',
+              key: "1",
+              icon: <UserOutlined onClick={()=>navigate("/dashboard")}/>,
+              label: <h4 onClick={()=>navigate("/dashboard")} style={{color:"white"}}>Dashboard</h4>
             },
             {
-              key: '2',
-              icon: <VideoCameraOutlined />,
-              label: 'Manager User',
+              key: "2",
+              icon: <VideoCameraOutlined  onClick={()=>navigate("/users")}/>,
+              label: <h4 onClick={()=>navigate("/users")} style={{color:"white"}}>Manageruser</h4>
             },
             {
-              key: '3',
-              icon: <UploadOutlined />,
-              label: 'Manager Trips',
+              key: "3",
+              icon: <UploadOutlined onClick={()=>navigate("/trips")}/>,
+              label:<h4 onClick={()=>navigate("/trips")} style={{color:"white"}}>Managertrips</h4>
             },
           ]}
         />
@@ -49,20 +51,23 @@ const DashLayout = ({ children }) => {
             padding: 0,
           }}
         >
-          {React.createElement(collapsed ? MenuUnfoldOutlined : MenuFoldOutlined, {
-            className: 'trigger',
-            onClick: () => setCollapsed(!collapsed),
-          })}
+          {React.createElement(
+            collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
+            {
+              className: "trigger",
+              onClick: () => setCollapsed(!collapsed),
+            }
+          )}
         </Header>
         <Content
           className="site-layout-background"
           style={{
-            margin: '24px 16px',
+            margin: "24px 16px",
             padding: 24,
             minHeight: 280,
           }}
         >
-          { children }
+          {children}
         </Content>
       </Layout>
     </Layout>
