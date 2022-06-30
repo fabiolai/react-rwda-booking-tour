@@ -29,8 +29,8 @@ const ManagerTrips =()=>{
       <Form.Item label="choose date">
         <RangePicker />
       </Form.Item>
-      <Form.Item label="Create">
-        <Button>Create</Button>
+      <Form.Item >
+        <Button style={{background:"gray"}}>Create</Button>
       </Form.Item>
       </Form>
       </Card>

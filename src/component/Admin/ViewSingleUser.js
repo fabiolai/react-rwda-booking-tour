@@ -18,6 +18,7 @@ const SingleUser = ({ data }) => {
       >
         <img src={data?.Profile} />
         <h2>{data?.Name}</h2>
+        <h3>{data?.about}</h3>
         <h3>{data?.Email}</h3>
         <h3>{data?.Home}</h3>
         <h3>{data?.Phone}</h3>

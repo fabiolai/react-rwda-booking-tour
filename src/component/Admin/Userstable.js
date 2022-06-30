@@ -80,7 +80,7 @@ const UsersTable = () => {
         <h4> are sure you want to Delete?{userSelected.name}</h4>
       </Modal>
       <Drawer
-        visible={visibleDrawer}
+         visible={visibleDrawer}
         onClose={() => {
           setVisibleDrawer(false);
         }}

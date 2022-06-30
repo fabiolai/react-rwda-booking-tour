@@ -19,7 +19,7 @@ const DashLayout = ({ children }) => {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Layout>
-      <Sider trigger={null} collapsible collapsed={collapsed}>
+      <Sider trigger={null} collapsedWidth={0} collapsible collapsed={collapsed}>
         <div className="logo" />
         <Menu
           theme="dark"
